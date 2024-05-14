@@ -32,11 +32,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (toggleButton && mainNav) {
     toggleButton.addEventListener("click", function (e) {
-      e.preventDefault(); // Empêche le navigateur de suivre le lien
-      this.classList.toggle("is-clicked"); // Toggle la classe sur le bouton
-      siteBody.classList.toggle("menu-is-open"); // Toggle la classe sur le body
-      mainNav.classList.toggle("is-visible"); // Ajoutez cette classe à votre CSS si nécessaire
+      e.preventDefault();
+      this.classList.toggle("is-clicked");
+      siteBody.classList.toggle("menu-is-open");
+      mainNav.classList.toggle("is-visible");
     });
   }
 });
 // end toggle button mobile menu
+
+// Light blue theme
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggler = document.getElementById("theme-toggler");
+  const themeIcon = themeToggler.querySelector("i");
+
+  themeToggler.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.documentElement.classList.toggle("light-theme");
+    if (document.documentElement.classList.contains("light-theme")) {
+      themeIcon.className = "fa-solid fa-moon";
+    } else {
+      themeIcon.className = "fa-solid fa-sun";
+    }
+  });
+});

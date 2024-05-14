@@ -2545,3 +2545,139 @@ img {
     width: var(--vspace-0_75);
   }
 }
+
+/* Light blue theme  */
+/* Thème clair */
+:root.light-theme {
+  --color-body: #dae0e6;
+  --color-text: #2c3e50;
+  --color-1: #3498db; /* Bleu clair */
+  --color-2: #dae0e6; /* Gris très clair */
+  --color-3: #bdc3c7; /* Gris clair */
+  --color-link: #3498db;
+  --color-btn-primary: #3498db;
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-hover: #2980b9;
+  --color-btn-primary-hover-text: #dae0e6;
+  --color-header: #3498db;
+  --color-text-dark: #2c3e50;
+}
+
+/* Adaptation des éléments généraux au thème clair */
+/* Thème clair */
+:root.light-theme {
+  --color-body: #dae0e6 !important;
+  --color-text: #2c3e50 !important;
+  --color-1: #3498db !important;
+  --color-2: #dae0e6 !important;
+  --color-3: #f7f8f9 !important;
+  --color-link: #3498db !important;
+  --color-btn-primary: #3498db !important;
+  --color-btn-primary-text: #ffffff !important;
+  --color-btn-primary-hover: #2980b9 !important;
+  --color-btn-primary-hover-text: #dae0e6 !important;
+  --color-header: #3498db !important;
+  --color-text-dark: #19222c !important;
+}
+
+/* Adaptation des éléments généraux au thème clair */
+.light-theme body,
+.light-theme p,
+.light-theme h1,
+.light-theme h2,
+.light-theme h3 {
+  color: var(--color-text-dark) !important;
+}
+
+.light-theme a {
+  color: var(--color-link) !important;
+}
+
+.light-theme a:hover {
+  color: var(--color-link-hover) !important;
+}
+
+.light-theme .btn {
+  background-color: var(--color-btn-primary) !important;
+  color: var(--color-btn-primary-text) !important;
+}
+
+.light-theme .btn:hover {
+  background-color: var(--color-btn-primary-hover) !important;
+  color: var(--color-btn-primary-hover-text) !important;
+}
+
+/* Spécifications pour les en-têtes et le pied de page */
+.light-theme header,
+.light-theme .s-footer,
+.light-theme .s-header__nav {
+  background-color: var(--color-header) !important;
+}
+
+.light-theme .s-header__menu-links a {
+  color: var(--color-3) !important;
+}
+
+.light-theme .s-header__menu-links a:hover {
+  color: var(--color-3-dark) !important;
+}
+
+/* Correction pour les sections spécifiques */
+.light-theme .s-intro,
+.light-theme .s-about,
+.light-theme .s-expertise,
+.light-theme .s-projects {
+  background-color: var(--color-2) !important;
+}
+
+.light-theme .project-card {
+  background-color: var(--color-3) !important;
+}
+
+.light-theme .project-card:hover {
+  background-color: var(--color-3-dark) !important;
+}
+
+.light-theme .project-info {
+  color: var(--color-text-dark) !important;
+}
+
+.light-theme .badge,
+.light-theme .flag {
+  filter: brightness(0.9) !important;
+}
+
+/* .light-theme .s-intro {
+  background-color: var(--color-2) !important; 
+} */
+
+.light-theme .s-intro__content-title,
+.light-theme .s-intro__content-pretitle,
+.light-theme .s-intro__scroll-down a {
+  color: var(--color-text-dark) !important;
+}
+
+.light-theme .s-intro__scroll-down .scroll-icon {
+  border-color: var(--color-1) !important;
+  stroke: var(--color-1) !important;
+}
+
+.light-theme .row.s-intro__content.width-sixteen-col {
+  background-color: var(--color-2) !important;
+}
+
+/* Styles généraux pour l'icône dans le toggle */
+#theme-toggler i {
+  font-size: 40px; /* Ajuste la taille des icônes */
+  transition: color 0.3s ease;
+}
+
+/* Styles spécifiques pour le thème clair */
+.light-theme #theme-toggler i.fa-sun {
+  color: yellow;
+}
+
+/* Styles spécifiques pour le thème sombre */
+#theme-toggler i.fa-moon {
+  color: black;
+}
