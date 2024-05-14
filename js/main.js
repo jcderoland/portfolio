@@ -22,3 +22,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* toggle button mobile menu
+ * ---------------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector(".s-header__menu-toggle");
+  const siteBody = document.querySelector("body");
+  const mainNav = document.querySelector(".s-header__nav");
+
+  if (toggleButton && mainNav) {
+    toggleButton.addEventListener("click", function (e) {
+      e.preventDefault(); // Empêche le navigateur de suivre le lien
+      this.classList.toggle("is-clicked"); // Toggle la classe sur le bouton
+      siteBody.classList.toggle("menu-is-open"); // Toggle la classe sur le body
+      mainNav.classList.toggle("is-visible"); // Ajoutez cette classe à votre CSS si nécessaire
+    });
+  }
+});
+// end toggle button mobile menu
