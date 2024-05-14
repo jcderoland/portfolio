@@ -363,7 +363,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   width: auto;
   max-width: 100%;
-  border-radius: 120px;
+  border-radius: 80px;
 }
 
 .s-projects {
@@ -379,24 +379,46 @@ body::-webkit-scrollbar-thumb {
 
 a:hover,
 .badge:hover,
-.flag:hover {
+.flag:hover,
+img:hover {
   transform: scale(1.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
-.fade-in-section {
+/* CSS pour l'animation fade-in */
+.fadein {
   opacity: 0;
-  transform: translateY(20px);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transform: translate(0, 10vh);
+  transition: opacity 1s, transform 1s;
 }
 
-.is-visible {
+.fadein.visible {
   opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
+  transform: translate(0, 0);
 }
 
+/* CSS pour l'animation du titre */
+
+.s-intro__content-title,
+.s-intro__content-media-inner {
+  opacity: 0;
+  transform: translateX(-100vw);
+  animation: slideIn 1.5s forwards ease-out;
+}
+
+/* Keyframes pour l'animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERIES */
 @media (max-width: 992px) {
   .project-card {
     flex: 0 1 100%;
@@ -3117,6 +3139,7 @@ td:last-child {
   vertical-align: bottom;
   box-shadow: 0 60px 40px -40px rgba(0, 0, 0, 0.2);
   position: relative;
+  border-radius: 20px;
 }
 
 .s-intro__content-media .lines {
