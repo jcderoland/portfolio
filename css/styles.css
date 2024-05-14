@@ -369,8 +369,8 @@ body::-webkit-scrollbar-thumb {
 .s-projects {
   background-color: var(--color-2-dark);
   border-radius: 20px;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 #featured-projects-title {
@@ -399,15 +399,14 @@ img:hover {
 
 /* CSS pour l'animation du titre */
 
-.s-intro__content-title,
-.s-intro__content-media-inner {
+.s-intro__content-title {
   opacity: 0;
   transform: translateX(-100vw);
-  animation: slideIn 1.5s forwards ease-out;
+  animation: slideInLeft 1.5s forwards ease-out;
 }
 
 /* Keyframes pour l'animation */
-@keyframes slideIn {
+@keyframes slideInLeft {
   0% {
     transform: translateX(-100vw);
     opacity: 0;
@@ -415,6 +414,109 @@ img:hover {
   100% {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+/* CSS pour l'animation de l'image */
+
+.s-intro__content-media-inner {
+  opacity: 0;
+  transform: translateX(+100vw);
+  animation: slideInRight 1.5s forwards ease-out;
+}
+
+/* Keyframes pour l'animation */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(+100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Floating effect */
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+}
+
+/* Typing effect */
+
+.typing {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(40, end) infinite;
+}
+
+/* Keyframes pour l'animation de frappe et le curseur */
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+    border-right: 3px solid black;
+  }
+  50% {
+    width: 100%;
+    border-right: 3px solid transparent;
+  }
+}
+
+/* Color shift effect */
+
+.color-shift-effect img {
+  animation: color-shift 50s infinite alternate ease-in-out;
+}
+
+@keyframes color-shift {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+/* Underline effect */
+
+.underline-effect {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: -100%;
+  background-color: coral;
+  animation: underlineSlide 6s linear infinite;
+}
+
+@keyframes underlineSlide {
+  0%,
+  100% {
+    left: -100%;
+  }
+  50% {
+    left: 100%;
   }
 }
 
@@ -2881,7 +2983,7 @@ td:last-child {
     background-color: var(--color-2-dark);
     box-shadow: var(--box-shadow-2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    padding-top: calc(var(--header-height) + var(--vspace-3));
+    padding-top: 5%;
     padding-right: calc(var(--gutter) + 4.4vw);
     padding-left: calc(var(--gutter) + 4.4vw);
     padding-bottom: 4.4rem;
@@ -2980,8 +3082,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-pageheader {
-  padding-top: var(--vspace-6);
-  padding-bottom: var(--vspace-3);
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: var(--color-2-dark);
   text-align: center;
 }
@@ -2999,8 +3101,8 @@ td:last-child {
 }
 
 .s-pagecontent {
-  padding-top: var(--vspace-4);
-  padding-bottom: var(--vspace-3);
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .s-pagecontent .pageintro {
@@ -3030,8 +3132,8 @@ td:last-child {
 
 @media screen and (max-width: 800px) {
   .s-pageheader {
-    padding-top: var(--vspace-5);
-    padding-bottom: var(--vspace-2);
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .s-pagecontent .pageintro {
@@ -3041,7 +3143,7 @@ td:last-child {
 
 @media screen and (max-width: 600px) {
   .s-pagecontent {
-    padding-top: var(--vspace-3);
+    padding-top: 5%;
   }
 }
 
@@ -3051,8 +3153,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-intro {
-  --content-padding-top: max(20rem, 18vh);
-  --content-padding-bottom: 10.8rem;
+  --content-padding-top: 5%;
+  --content-padding-bottom: 5%;
   --content-min-height: calc(var(--vspace-1) * 27);
   z-index: 2;
   background-color: var(--color-2-dark);
@@ -3075,8 +3177,8 @@ td:last-child {
   align-items: center;
   height: 100%;
   color: var(--color-3);
-  padding-top: 80px;
-  padding-bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   position: relative;
 }
 
@@ -3321,7 +3423,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 900px) {
   .s-intro {
-    --content-padding-top: max(12rem, 18vh);
+    --content-padding-top: 5%;
     height: auto;
   }
 
@@ -3392,7 +3494,7 @@ td:last-child {
 
 @media screen and (max-width: 600px) {
   .s-intro {
-    --content-padding-top: max(12rem, 16vh);
+    --content-padding-top: 5%;
   }
 
   .s-intro__content-media .lines {
@@ -3425,8 +3527,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: var(--color-2-dark);
   color: var(--color-3);
 }
@@ -3477,8 +3579,8 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
   .s-about {
-    padding-top: var(--vspace-4);
-    padding-bottom: var(--vspace-5);
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   .s-about__content-imgbg {
@@ -3493,8 +3595,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-expertise {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .s-expertise__content-main {
@@ -3507,7 +3609,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
   .s-expertise {
-    padding-top: var(--vspace-5);
+    padding-top: 5%;
   }
 }
 
@@ -3517,8 +3619,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-  padding-top: var(--vspace-6);
-  padding-bottom: var(--vspace-4);
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: var(--color-3);
 }
 
@@ -3625,8 +3727,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-cta {
-  padding-top: var(--vspace-4_5);
-  padding-bottom: var(--vspace-3_5);
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: var(--color-2-dark);
   color: var(--color-3);
 }
@@ -3653,60 +3755,6 @@ td:last-child {
     width: 100%;
     margin-right: 0;
   }
-}
-
-/* ===================================================================
- * # JOURNAL
- *
- *
- * ------------------------------------------------------------------- */
-.s-journal {
-  padding-top: var(--vspace-6);
-  padding-bottom: var(--vspace-3);
-  background-color: #181818;
-  color: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.s-journal a {
-  color: var(--color-1);
-}
-
-.s-journal a:focus,
-.s-journal a:hover {
-  color: var(--color-3-dark);
-}
-
-.s-journal h3 a {
-  color: var(--color-3);
-}
-
-.s-journal h3 a:focus,
-.s-journal h3 a:hover {
-  color: var(--color-3);
-}
-
-.s-journal .section-header {
-  margin: 0 auto;
-}
-
-.s-journal .text-display-title,
-.s-journal h3 {
-  color: var(--color-3);
-}
-
-.s-journal .text-pretitle,
-.s-journal .text-display-title {
-  width: min(900px, 100%);
-  margin: 0 auto;
-}
-
-.s-journal .blog-card-title a {
-  color: var(--color-3);
-}
-
-.s-journal__content-main {
-  margin-top: var(--vspace-2);
 }
 
 /* ===================================================================
