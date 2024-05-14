@@ -3771,6 +3771,53 @@ td:last-child {
   color: var(--color-3);
 }
 
+.s-footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.s-footer__about {
+  flex: 0 0 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.s-footer__about h3,
+.s-footer__about p {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.s-footer__about img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .s-footer__about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-footer__about h3,
+  .s-footer__about p {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .s-footer__about img {
+    margin-top: 20px;
+  }
+}
+
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
