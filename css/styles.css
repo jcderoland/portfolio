@@ -2681,3 +2681,33 @@ img {
 #theme-toggler i.fa-moon {
   color: black;
 }
+
+/* Menu nav  */
+
+@media screen and (max-width: 900px) {
+  .s-header__nav {
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: block;
+    background-color: var(--color-2-dark);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+  }
+
+  .s-header__menu-links,
+  .s-header__contact {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .menu-is-open .s-header__nav {
+    transform: scaleY(1);
+  }
+}
