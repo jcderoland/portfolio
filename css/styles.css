@@ -2711,3 +2711,31 @@ img {
     transform: scaleY(1);
   }
 }
+
+/* Project cards ajustments  */
+@media (max-width: 768px) {
+  .project-card {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .row {
+    padding: 0 20px;
+  }
+
+  .column {
+    padding: 0;
+  }
+
+  .projects-grid {
+    margin: 0 -10px;
+  }
+
+  .project-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+}
