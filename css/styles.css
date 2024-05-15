@@ -720,13 +720,8 @@ img:hover {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 992px) {
-  .project-card {
-    flex: 0 1 100%;
-  }
-}
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .project-card {
     flex: 0 0 100%;
     max-width: 100%;
