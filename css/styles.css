@@ -245,7 +245,7 @@ body::-webkit-scrollbar-thumb {
 
 body {
   --sb-track-color: #232e33;
-  --sb-thumb-color: #af916b;
+  --sb-thumb-color: var(--color-1);
   --sb-size: 14px;
 }
 
@@ -2772,9 +2772,16 @@ img.icon {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000; /* S'assurer qu'elle reste au-dessus des autres contenus */
-  background-color: #fff; /* ou toute autre couleur de fond selon le design */
+  z-index: 1000;
+  background-color: #fff;
 }
 body {
-  padding-top: 80px; /* La hauteur de votre barre de navigation */
+  padding-top: 80px;
+}
+
+:target {
+  display: block;
+  position: relative;
+  top: -85px;
+  padding-top: 85px;
 }

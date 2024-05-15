@@ -56,3 +56,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Language switch
+function loadLanguage(lang) {
+  fetch(`path/to/lang_${lang}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      document.querySelectorAll("[data-key]").forEach((el) => {
+        const key = el.getAttribute("data-key");
+        el.textContent = data[key];
+      });
+    });
+}

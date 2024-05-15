@@ -1,191 +1,460 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jean-Christophe's Portfolio</title>
+    <title data-key="title">Jean-Christophe's Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-
-</head>
-<body id="top">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body id="top">
     <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     <div id="page" class="s-pagewrap ss-home">
-        <header class="s-header">
-            <div class="row s-header__inner width-sixteen-col ">
-                <div class="s-header__block">
-                  <div class="s-header__logo">
-                    <a id="theme-toggler" class="logo" href="#top">
-                        <i class="fa-solid fa-sun"></i>
-                    </a>
-                </div>
-                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
-                </div>
-                <nav class="s-header__nav ">
-                    <ul class="s-header__menu-links ">
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#expertise">Expertise</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="s-header__contact ">
-                        <a href="#contact" class="btn btn--primary s-header__contact-btn">Let's Work Together</a>
-                    </div>
-                </nav>
+      <header class="s-header">
+        <div class="row s-header__inner width-sixteen-col">
+          <div class="s-header__block">
+            <div class="s-header__logo">
+              <a
+                id="theme-toggler"
+                class="logo"
+                href="#top"
+                data-key="theme_toggler"
+              >
+                <i class="fa-solid fa-sun"></i>
+              </a>
             </div>
-        </header>
-        <section id="intro" class="s-intro">
-            <div class="row s-intro__content width-sixteen-col ">
-                <div class="column lg-12 s-intro__content-inner grid-block">
-                    <div class="s-intro__content-text">
-                        <div class="s-intro__content-pretitle text-pretitle typing">Hello, I'm Jean-Christophe</div>
-                        <h1 class="s-intro__content-title">Trilingual Web Developer</h1>
-                        <div class="attention-getter flags-container">
-                          <img src="images/icons/french-flag.svg" alt="french-flag" class="flag badge float">
-                          <img src="images/icons/spanish-flag.svg" alt="spanish-flag" class="flag badge float">
-                          <img src="images/icons/uk-flag.svg" alt="uk-flag" class="flag badge float">
-                      </div>
-                    </div>
-                    <div class="s-intro__content-media ">
-                        <div class="s-intro__content-media-inner">
-                            <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg@2x.jpg 2x" class="float" alt="" />
-                            <div class="lines"><span></span></div>
-                        </div>
-                    </div>
-                    <div class="s-intro__scroll-down"><a href="#about" class="smoothscroll"><div class="scroll-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#97b34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg></div><span>Scroll for more</span></a></div>
-                </div>
+            <a class="s-header__menu-toggle" href="#0" data-key="menu"
+              ><span>Menu</span></a
+            >
+          </div>
+          <nav class="s-header__nav">
+            <ul class="s-header__menu-links">
+              <li><a href="#about" data-key="nav_about">About me</a></li>
+              <li>
+                <a href="#expertise" data-key="nav_expertise">Expertise</a>
+              </li>
+              <li><a href="#projects" data-key="nav_projects">Projects</a></li>
+              <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+            </ul>
+            <div class="s-header__contact">
+              <a
+                href="#contact"
+                class="btn btn--primary s-header__contact-btn"
+                data-key="work_together"
+                >Let's Work Together</a
+              >
             </div>
-        </section>
-        <section id="about" class="s-about target-section">
-            <div class="row s-about__content width-sixteen-col ">
-                <div class="column grid-block grid-section-split">
-                     <div class="section-header grid-section-split__header">
-                        <div class="text-pretitle">About me</div>
-                        <h2 class="text-display-title underline-effect">International Management and Tech Experience</h2>
-                    </div>
-                    <div class="s-about__content-main grid-section-split__primary">
-                        <p class="attention-getter">
-                            With over 10 years of management experience across continents, from Argentina to Spain, I shifted to web development, completing a training program at Openclassrooms and mastering a diverse technology stack.
-                        </p>
-                        <div class="attention-getter badges-container">
-                            <img src="images/icons/badge-html5.svg" alt="HTML5" class="badge float" title="HTML5">
-                            <img src="images/icons/badge-css3.svg" alt="CSS3" class="badge float" title="CSS3">
-                            <img src="images/icons/badge-javascript.png" alt="JavaScript" class="badge float" title="JavaScript">
-                            <img src="images/icons/badge-react.png" alt="React" class="badge float" title="React">
-                            <img src="images/icons/badge-redux.png" alt="Redux" class="badge float" title="Redux">
-                            <img src="images/icons/badge-figma.png" alt="Figma" class="badge float" title="Figma">
-                            <img src="images/icons/badge-git.png" alt="Git" class="badge float" title="Git">
-                            <img src="images/icons/badge-github.jpg" alt="GitHub" class="badge float" title="GitHub">
-                            <img src="images/icons/badge-nodejs.png" alt="Node.js" class="badge float" title="Node.js">
-                            <img src="images/icons/badge-sass.jpg" alt="Sass" class="badge float" title="Sass">
-                            <img src="images/icons/badge-swagger.png" alt="Swagger" class="badge float" title="Swagger">
-                            <img src="images/icons/badge-vscode.png" alt="Visual Studio Code" class="badge float" title="Visual Studio Code">
-                        </div>
-                        
-                        <p class="attention-getter">
-                            This background in international management, coupled with skills in HTML, CSS, JavaScript, React, Redux and Node.js, positions me to effectively address diverse project needs.
-                        </p>
-                        <div class="attention-getter flags-container">
-                            <img src="images/icons/french-flag.svg" alt="french-flag" class="flag badge float">
-                            <img src="images/icons/spanish-flag.svg" alt="spanish-flag" class="flag badge float">
-                            <img src="images/icons/uk-flag.svg" alt="uk-flag" class="flag badge float">
-                        </div>
-                        <p class="attention-getter">
-                            Fluent in French, Spanish and English, I am prepared to lead and contribute to projects on a global scale.
-                        </p>
-                    </div>
-                    <div class="s-about__content-btn grid-section-split__bottom ">
-                        <a href="#expertise" class="btn btn--stroke u-fullwidth">More About Me</a>
-                    </div>
-                </div>
+          </nav>
+        </div>
+      </header>
+      <section id="intro" class="s-intro">
+        <div class="row s-intro__content width-sixteen-col">
+          <div class="column lg-12 s-intro__content-inner grid-block">
+            <div class="s-intro__content-text">
+              <div
+                class="s-intro__content-pretitle text-pretitle typing"
+                data-key="intro_hello"
+              >
+                Hello, I'm Jean-Christophe
+              </div>
+              <h1 class="s-intro__content-title" data-key="intro_title">
+                Trilingual Web Developer
+              </h1>
+              <div class="attention-getter flags-container">
+                <img
+                  src="images/icons/french-flag.svg"
+                  alt="french-flag"
+                  class="flag badge float"
+                  onclick="loadLanguage('fr');"
+                />
+                <img
+                  src="images/icons/spanish-flag.svg"
+                  alt="spanish-flag"
+                  class="flag badge float"
+                  onclick="loadLanguage('es');"
+                />
+                <img
+                  src="images/icons/uk-flag.svg"
+                  alt="uk-flag"
+                  class="flag badge float"
+                  onclick="loadLanguage('en');"
+                />
+              </div>
             </div>
-        </section>
-        <section id="expertise" class="s-expertise">
-            <div class="row s-expertise__content width-sixteen-col ">
-                <div class="column xl-12 grid-block grid-section-split">
-                    <div class="section-header grid-section-split__header color-shift-effect">
-                        <div class="text-pretitle">Expertise</div>
-                        <h2 class="text-display-title underline-effect">Key Areas of Expertise</h2>
-                        <p class="lead">
-                            As a specialist in front-end development, I combine design sensibility with technical proficiency to craft responsive, user-centric digital experiences.
-                        </p>
-                        <img src="images/dev-manager.jpg" alt="dev-manager">
-                    </div>
-                    <div class="s-expertise__content-main grid-section-split__primary">
-                        <div class="grid-list-items list-items show-ctr">
-                            <div class="grid-list-items__item list-items__item">
-                                <div class="grid-list-items__title list-items__item-header">
-                                    <h3 class="list-items__item-title">Web Development</h3>
-                                </div>
-                                <div class="grid-list-items__text list-items__item-text">
-                                    <p>Proficient in HTML, CSS, JavaScript, React, and Node.js, I develop intuitive, engaging websites and applications.</p>
-                                </div>
-                            </div>
-                            <div class="grid-list-items__item list-items__item">
-                                <div class="grid-list-items__title list-items__item-header">
-                                    <h3 class="list-items__item-title">UI/UX Design</h3>
-                                </div>
-                                <div class="grid-list-items__text list-items__item-text">
-                                    <p>Experienced in Figma, I craft aesthetically pleasing designs that optimize user experience and interaction.</p>
-                                </div>
-                            </div>
-                            <div class="grid-list-items__item list-items__item">
-                                <div class="grid-list-items__title list-items__item-header">
-                                    <h3 class="list-items__item-title">SEO Optimization</h3>
-                                </div>
-                                <div class="grid-list-items__text list-items__item-text">
-                                    <p>I utilize SEO best practices to enhance website visibility and organic traffic, improving search engine rankings.</p>
-                                </div>
-                            </div>
-                            <div class="grid-list-items__item list-items__item">
-                                <div class="grid-list-items__title list-items__item-header">
-                                    <h3 class="list-items__item-title">Project Management</h3>
-                                </div>
-                                <div class="grid-list-items__text list-items__item-text">
-                                    <p>My management skills ensure projects are delivered on time, within scope, and to the highest quality standards.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="s-expertise__content-btn grid-section-split__bottom">
-                        <a href="#projects" class="btn btn--stroke u-fullwidth">View All Projects</a>
-                    </div>
-               </div>
-               </div>
-        </section>
+            <div class="s-intro__content-media">
+              <div class="s-intro__content-media-inner">
+                <img
+                  src="images/intro-bg.jpg"
+                  srcset="images/intro-bg.jpg 1x, images/intro-bg@2x.jpg 2x"
+                  class="float"
+                  alt=""
+                />
+                <div class="lines"><span></span></div>
+              </div>
+            </div>
+            <div class="s-intro__scroll-down">
+              <a href="#about" class="smoothscroll"
+                ><div class="scroll-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="36"
+                    height="36"
+                    fill="none"
+                    stroke="#97b34a"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="7 13 12 18 17 13"></polyline>
+                    <line x1="12" y1="18" x2="12" y2="6"></line>
+                  </svg>
+                </div>
+                <span data-key="scroll_more">Scroll for more</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="s-about target-section">
+        <div class="row s-about__content width-sixteen-col">
+          <div class="column grid-block grid-section-split">
+            <div class="section-header grid-section-split__header">
+              <div class="text-pretitle" data-key="about_me">About me</div>
+              <h2
+                class="text-display-title underline-effect"
+                data-key="about_title"
+              >
+                International Management and Tech Experience
+              </h2>
+            </div>
+            <div class="s-about__content-main grid-section-split__primary">
+              <p class="attention-getter" data-key="about_desc">
+                With over 10 years of management experience across continents,
+                from Argentina to Spain, I shifted to web development,
+                completing a training program at Openclassrooms and mastering a
+                diverse technology stack.
+              </p>
+              <div class="attention-getter badges-container">
+                <img
+                  src="images/icons/badge-html5.svg"
+                  alt="HTML5"
+                  class="badge float"
+                  title="HTML5"
+                />
+                <img
+                  src="images/icons/badge-css3.svg"
+                  alt="CSS3"
+                  class="badge float"
+                  title="CSS3"
+                />
+                <img
+                  src="images/icons/badge-javascript.png"
+                  alt="JavaScript"
+                  class="badge float"
+                  title="JavaScript"
+                />
+                <img
+                  src="images/icons/badge-react.png"
+                  alt="React"
+                  class="badge float"
+                  title="React"
+                />
+                <img
+                  src="images/icons/badge-redux.png"
+                  alt="Redux"
+                  class="badge float"
+                  title="Redux"
+                />
+                <img
+                  src="images/icons/badge-figma.png"
+                  alt="Figma"
+                  class="badge float"
+                  title="Figma"
+                />
+                <img
+                  src="images/icons/badge-git.png"
+                  alt="Git"
+                  class="badge float"
+                  title="Git"
+                />
+                <img
+                  src="images/icons/badge-github.jpg"
+                  alt="GitHub"
+                  class="badge float"
+                  title="GitHub"
+                />
+                <img
+                  src="images/icons/badge-nodejs.png"
+                  alt="Node.js"
+                  class="badge float"
+                  title="Node.js"
+                />
+                <img
+                  src="images/icons/badge-sass.jpg"
+                  alt="Sass"
+                  class="badge float"
+                  title="Sass"
+                />
+                <img
+                  src="images/icons/badge-swagger.png"
+                  alt="Swagger"
+                  class="badge float"
+                  title="Swagger"
+                />
+                <img
+                  src="images/icons/badge-vscode.png"
+                  alt="Visual Studio Code"
+                  class="badge float"
+                  title="Visual Studio Code"
+                />
+              </div>
+              <p class="attention-getter" data-key="about_summary">
+                This background in international management, coupled with skills
+                in HTML, CSS, JavaScript, React, Redux and Node.js, positions me
+                to effectively address diverse project needs.
+              </p>
+              <div class="attention-getter flags-container">
+                <img
+                  src="images/icons/french-flag.svg"
+                  alt="french-flag"
+                  class="flag badge float"
+                />
+                <img
+                  src="images/icons/spanish-flag.svg"
+                  alt="spanish-flag"
+                  class="flag badge float"
+                />
+                <img
+                  src="images/icons/uk-flag.svg"
+                  alt="uk-flag"
+                  class="flag badge float"
+                />
+              </div>
+              <p class="attention-getter" data-key="about_fluency">
+                Fluent in French, Spanish and English, I am prepared to lead and
+                contribute to projects on a global scale.
+              </p>
+            </div>
+            <div class="s-about__content-btn grid-section-split__bottom">
+              <a
+                href="#expertise"
+                class="btn btn--stroke u-fullwidth"
+                data-key="more_about_me"
+                >More About Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="expertise" class="s-expertise">
+        <div class="row s-expertise__content width-sixteen-col">
+          <div class="column xl-12 grid-block grid-section-split">
+            <div
+              class="section-header grid-section-split__header color-shift-effect"
+            >
+              <div class="text-pretitle" data-key="expertise_section">
+                Expertise
+              </div>
+              <h2
+                class="text-display-title underline-effect"
+                data-key="expertise_title"
+              >
+                Key Areas of Expertise
+              </h2>
+              <p class="lead" data-key="expertise_desc">
+                I leverage a strong background in web development and
+                international management to create seamless, user-focused
+                digital solutions.
+              </p>
+              <img
+                src="images/dev-international.webp"
+                alt="dev-international"
+              />
+            </div>
+            <div class="s-expertise__content-main grid-section-split__primary">
+              <div class="grid-list-items list-items show-ctr">
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3 class="list-items__item-title" data-key="web_dev">
+                      Web Development
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="web_dev_desc">
+                      Expert in HTML, CSS, JavaScript, React, and Node.js, I
+                      create high-performance websites and apps.
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3
+                      class="list-items__item-title"
+                      data-key="multilingual_capabilities"
+                    >
+                      Multilingual Communication
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="multilingual_capabilities_desc">
+                      Fluent in French, English, and Spanish, I excel in global
+                      project environments, enhancing team collaboration and
+                      client satisfaction.
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3
+                      class="list-items__item-title"
+                      data-key="seo_optimization"
+                    >
+                      SEO Optimization
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="seo_optimization_desc">
+                      I apply advanced SEO strategies to significantly improve
+                      web visibility and user engagement.
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3
+                      class="list-items__item-title"
+                      data-key="project_management"
+                    >
+                      Project Management
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="project_management_desc">
+                      My extensive management background ensures projects are
+                      efficient, on target, and of high quality.
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3
+                      class="list-items__item-title"
+                      data-key="api_integration"
+                    >
+                      API Integration
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="api_integration_desc">
+                      Skilled in seamless API integration, I enhance
+                      applications' connectivity and functionality across
+                      platforms.
+                    </p>
+                  </div>
+                </div>
+                <div class="grid-list-items__item list-items__item">
+                  <div class="grid-list-items__title list-items__item-header">
+                    <h3
+                      class="list-items__item-title"
+                      data-key="innovative_solutions"
+                    >
+                      Innovative Solutions
+                    </h3>
+                  </div>
+                  <div class="grid-list-items__text list-items__item-text">
+                    <p data-key="innovative_solutions_desc">
+                      I am dedicated to leveraging emerging technologies and
+                      creative problem-solving to develop innovative solutions
+                      that push the boundaries of web functionality and design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s-expertise__content-btn grid-section-split__bottom">
+              <a
+                href="#projects"
+                class="btn btn--stroke u-fullwidth"
+                data-key="view_all_projects"
+                >View All Projects</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="projects" class="s-projects">
-        <div class="row s-projects__content width-sixteen-col ">
+        <div class="row s-projects__content width-sixteen-col">
           <div class="column xl-12 grid-section-split">
             <div class="section-header grid-section-split__header">
-              <div class="text-pretitle">Projects</div>
-              <h2 class="text-display-title underline-effect" id="featured-projects-title">Featured Projects</h2>
+              <div class="text-pretitle" data-key="projects_section_title">
+                Projects
+              </div>
+              <h2
+                class="text-display-title underline-effect"
+                id="featured-projects-title"
+                data-key="projects_section_subtitle"
+              >
+                Featured Projects
+              </h2>
             </div>
             <div class="s-projects__content-main grid-section-split__primary">
               <div class="projects-grid">
-                
-                <div class="project-card">
+                <div class="project-card" data-key="project_booki">
                   <div class="project-image">
-                    <img src="images/projects/2. Booki.png" alt="Booki Project Screenshot">
+                    <img
+                      src="images/projects/2. Booki.png"
+                      alt="Booki Project Screenshot"
+                    />
                   </div>
                   <div class="project-info">
-                    <h3 class="project-title">Booki</h3>
-                    <p class="project-client">Client: Web platform for accommodation and activities search</p>
-                    <p class="project-description">
-                      Developed a responsive web application to simplify accommodation and activity searches. Utilized HTML and CSS to integrate designs from UI mock-ups, focusing on flexbox for adaptable layouts across various devices.
+                    <h3 class="project-title" data-key="project_title_booki">
+                      Booki
+                    </h3>
+                    <p class="project-client" data-key="project_client_booki">
+                      Client: Web platform for accommodation and activities
+                      search
                     </p>
-                    <p>Github repository: <a href="https://github.com/jcderoland/OC-Project-3---Booki">Booki repository</a> </p>
-                    <p>Github pages: <a href="https://jcderoland.github.io/OC-Project-3---Booki/">Booki website</a> </p>
-                    <ul class="project-technologies">
+                    <p
+                      class="project-description"
+                      data-key="project_description_booki"
+                    >
+                      Developed a responsive web application to simplify
+                      accommodation and activity searches. Utilized HTML and CSS
+                      to integrate designs from UI mock-ups, focusing on flexbox
+                      for adaptable layouts across various devices.
+                    </p>
+                    <p data-key="project_github_booki">
+                      Github repository:
+                      <a
+                        href="https://github.com/jcderoland/OC-Project-3---Booki"
+                        >Booki repository</a
+                      >
+                    </p>
+                    <p data-key="project_website_booki">
+                      Github pages:
+                      <a
+                        href="https://jcderoland.github.io/OC-Project-3---Booki/"
+                        >Booki website</a
+                      >
+                    </p>
+                    <ul
+                      class="project-technologies"
+                      data-key="project_technologies_booki"
+                    >
                       <li>HTML5</li>
                       <li>CSS3</li>
                       <li>Responsive Design</li>
@@ -193,20 +462,46 @@
                     </ul>
                   </div>
                 </div>
-      
-                <div class="project-card">
+
+                <div class="project-card" data-key="project_kasa">
                   <div class="project-image">
-                    <img src="images/projects/8. Kasa.png" alt="Kasa Project Screenshot">
+                    <img
+                      src="images/projects/8. Kasa.png"
+                      alt="Kasa Project Screenshot"
+                    />
                   </div>
                   <div class="project-info">
-                    <h3 class="project-title">Kasa</h3>
-                    <p class="project-client">Client: Apartment rental startup</p>
-                    <p class="project-description">
-                      Led the frontend redesign and backend overhaul using React and Node.js to modernize an existing platform. Implemented CSS animations and a responsive design to enhance UX and UI across devices.
+                    <h3 class="project-title" data-key="project_title_kasa">
+                      Kasa
+                    </h3>
+                    <p class="project-client" data-key="project_client_kasa">
+                      Client: Apartment rental startup
                     </p>
-                    <p>Github repository: <a href="https://github.com/jcderoland/OCP8-Kasa">Kasa repository</a> </p>
-                    <p>Github pages: <a href="https://jcderoland.github.io/OCP8-Kasa/#/">Kasa website</a> </p>
-                    <ul class="project-technologies">
+                    <p
+                      class="project-description"
+                      data-key="project_description_kasa"
+                    >
+                      Led the frontend redesign and backend overhaul using React
+                      and Node.js to modernize an existing platform. Implemented
+                      CSS animations and a responsive design to enhance UX and
+                      UI across devices.
+                    </p>
+                    <p data-key="project_github_kasa">
+                      Github repository:
+                      <a href="https://github.com/jcderoland/OCP8-Kasa"
+                        >Kasa repository</a
+                      >
+                    </p>
+                    <p data-key="project_website_kasa">
+                      Github pages:
+                      <a href="https://jcderoland.github.io/OCP8-Kasa/#/"
+                        >Kasa website</a
+                      >
+                    </p>
+                    <ul
+                      class="project-technologies"
+                      data-key="project_technologies_kasa"
+                    >
                       <li>React</li>
                       <li>Node.js</li>
                       <li>Sass</li>
@@ -216,19 +511,46 @@
                     </ul>
                   </div>
                 </div>
-      
-                <div class="project-card ">
+
+                <div class="project-card" data-key="project_argentbank">
                   <div class="project-image">
-                    <img src="images/projects/11. Argent Bank.png" alt="ArgentBank Project Screenshot">
+                    <img
+                      src="images/projects/11. Argent Bank.png"
+                      alt="ArgentBank Project Screenshot"
+                    />
                   </div>
                   <div class="project-info">
-                    <h3 class="project-title">ArgentBank</h3>
-                    <p class="project-client">Client: Online bank looking to expand services</p>
-                    <p class="project-description">
-                      Developed a user dashboard with authentication using React/Redux. Focused on secure API calls and managed state with Redux to enhance user interaction and data security.
+                    <h3
+                      class="project-title"
+                      data-key="project_title_argentbank"
+                    >
+                      ArgentBank
+                    </h3>
+                    <p
+                      class="project-client"
+                      data-key="project_client_argentbank"
+                    >
+                      Client: Online bank looking to expand services
                     </p>
-                    <p>Github repository: <a href="https://github.com/jcderoland/argent-bank-react-app">Argent bank repository</a> </p>
-                    <ul class="project-technologies">
+                    <p
+                      class="project-description"
+                      data-key="project_description_argentbank"
+                    >
+                      Developed a user dashboard with authentication using
+                      React/Redux. Focused on secure API calls and managed state
+                      with Redux to enhance user interaction and data security.
+                    </p>
+                    <p data-key="project_github_argentbank">
+                      Github repository:
+                      <a
+                        href="https://github.com/jcderoland/argent-bank-react-app"
+                        >Argent bank repository</a
+                      >
+                    </p>
+                    <ul
+                      class="project-technologies"
+                      data-key="project_technologies_argentbank"
+                    >
                       <li>React</li>
                       <li>Redux</li>
                       <li>Axios</li>
@@ -237,20 +559,46 @@
                     </ul>
                   </div>
                 </div>
-      
-                <div class="project-card ">
+
+                <div class="project-card" data-key="project_archiwebos">
                   <div class="project-image">
-                    <img src="images/projects/6. ArchiWebos.png" alt="Archiwebos Project Screenshot">
+                    <img
+                      src="images/projects/6. ArchiWebos.png"
+                      alt="Archiwebos Project Screenshot"
+                    />
                   </div>
                   <div class="project-info">
-                    <h3 class="project-title">Archiwebos</h3>
-                    <p class="project-client">Client: Interior design agency</p>
-                    <p class="project-description">
-                      Supported the final development of a new website, implemented key features such as a category filter, secure login, and dynamic content management using JavaScript for authentication.
+                    <h3
+                      class="project-title"
+                      data-key="project_title_archiwebos"
+                    >
+                      Archiwebos
+                    </h3>
+                    <p
+                      class="project-client"
+                      data-key="project_client_archiwebos"
+                    >
+                      Client: Interior design agency
                     </p>
-                    <p>Github repository: <a href="https://github.com/jcderoland/OCP6-ArchiWebos">ArchiWebos repository</a> </p>
-                    <p>Github pages: <a href="https://jcderoland.github.io/OCP6-ArchiWebos/">ArchiWebos website</a> </p>
-                    <ul class="project-technologies">
+                    <p
+                      class="project-description"
+                      data-key="project_description_archiwebos"
+                    >
+                      Supported the final development of a new website,
+                      implemented key features such as a category filter, secure
+                      login, and dynamic content management using JavaScript for
+                      authentication.
+                    </p>
+                    <p data-key="project_github_archiwebos">
+                      Github repository:
+                      <a href="https://github.com/jcderoland/OCP6-ArchiWebos"
+                        >ArchiWebos repository</a
+                      >
+                    </p>
+                    <ul
+                      class="project-technologies"
+                      data-key="project_technologies_archiwebos"
+                    >
                       <li>Node.js</li>
                       <li>Figma</li>
                       <li>HTML5</li>
@@ -260,20 +608,43 @@
                     </ul>
                   </div>
                 </div>
-      
-                <div class="project-card ">
+
+                <div class="project-card" data-key="project_ohmyfood">
                   <div class="project-image">
-                    <img src="images/projects/4. OhMyFood.png" alt="OhmyFood Project Screenshot">
+                    <img
+                      src="images/projects/4. OhMyFood.png"
+                      alt="OhmyFood Project Screenshot"
+                    />
                   </div>
                   <div class="project-info">
-                    <h3 class="project-title">OhmyFood</h3>
-                    <p class="project-client">Client: Gastronomy startup</p>
-                    <p class="project-description">
-                      Created a 'mobile first' website to list gourmet restaurant menus, focusing on smooth and natural animations to enhance user engagement and interaction.
+                    <h3 class="project-title" data-key="project_title_ohmyfood">
+                      OhmyFood
+                    </h3>
+                    <p
+                      class="project-client"
+                      data-key="project_client_ohmyfood"
+                    >
+                      Client: Gastronomy startup
                     </p>
-                    <p>Github repository: <a href="https://github.com/jcderoland/OC-Project-4---OhMyFood">OhMyFood repository</a> </p>
-                    <p>Github pages: <a href="https://jcderoland.github.io/OC-Project-4---OhMyFood/">OhMyFood website</a> </p>
-                    <ul class="project-technologies">
+                    <p
+                      class="project-description"
+                      data-key="project_description_ohmyfood"
+                    >
+                      Created a 'mobile first' website to list gourmet
+                      restaurant menus, focusing on smooth and natural
+                      animations to enhance user engagement and interaction.
+                    </p>
+                    <p data-key="project_github_ohmyfood">
+                      Github repository:
+                      <a
+                        href="https://github.com/jcderoland/OC-Project-4---OhMyFood"
+                        >OhMyFood repository</a
+                      >
+                    </p>
+                    <ul
+                      class="project-technologies"
+                      data-key="project_technologies_ohmyfood"
+                    >
                       <li>HTML5</li>
                       <li>CSS3</li>
                       <li>Responsive Web Design</li>
@@ -281,67 +652,124 @@
                     </ul>
                   </div>
                 </div>
-           
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <section id="contact" class="s-contact">
-        <div class="row s-contact__content width-sixteen-col ">
-            <div class="column xl-12 grid-block">
-                <div class="grid-full section-header text-center ">
-                    <div class="text-pretitle">Contact Me</div>
-                    <h2 class="text-display-title underline-effect">Let's Work Together</h2>
-                </div>
-                <div class="grid-full s-contact__content-main grid-list-items ">
-                    <div class="contact-details">
-                      <img src="images/dev-international.webp" alt="dev-international">
-                        <p>Interested in collaborating or have questions?</p>
-                        <p>Reach out to me via:</p>
-                        <ul>
-                            <li><strong><i class="fa-solid fa-envelope icon"></i> </strong><a href="jc.deroland@gmail.com">jc.deroland@gmail.com</a></li>
-                            <li><strong><img src="images/icons/icon-linkedin.svg" class="icon" alt="">: </strong> <a href="https://www.linkedin.com/in/jean-christophe-de-roland/">linkedin.com/in/jean-christophe-de-roland/</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="s-footer">
-        <div class="row s-footer__content ">
-            <div class="column xl-12  s-footer__block s-footer__about about-me">
-                <h3>About me</h3>
-                
-               <p>
-                As a dedicated and innovative web developer passionate about technology and digital solutions, my extensive background in project management and client relations drives me to deliver high-quality, responsive, and efficient web solutions.
-                </p>
-                <img src="images/about-me.jpg" alt="about-me">
-            </div>
 
+      <section id="contact" class="s-contact">
+        <div class="row s-contact__content width-sixteen-col">
+          <div class="column xl-12 grid-block">
+            <div class="grid-full section-header text-center">
+              <div class="text-pretitle" data-key="contact_section">
+                Contact Me
+              </div>
+              <h2
+                class="text-display-title underline-effect"
+                data-key="contact_title"
+              >
+                Let's Work Together
+              </h2>
+            </div>
+            <div class="grid-full s-contact__content-main grid-list-items">
+              <div class="contact-details">
+                <img src="images/dev-manager.jpg" alt="dev-manager" />
+                <p data-key="contact_intro">
+                  Interested in collaborating or have questions?
+                </p>
+                <p data-key="contact_reach">Reach out to me via:</p>
+                <ul>
+                  <li>
+                    <strong><i class="fa-solid fa-envelope icon"></i></strong
+                    ><a href="jc.deroland@gmail.com">jc.deroland@gmail.com</a>
+                  </li>
+                  <li>
+                    <strong
+                      ><img
+                        src="images/icons/icon-linkedin.svg"
+                        class="icon"
+                        alt=""
+                      /> </strong
+                    ><a
+                      href="https://www.linkedin.com/in/jean-christophe-de-roland/"
+                      >linkedin.com/in/jean-christophe-de-roland/</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="s-footer">
+        <div class="row s-footer__content">
+          <div class="column xl-12 s-footer__block s-footer__about about-me">
+            <h3 data-key="footer_about_me">About me</h3>
+            <p data-key="footer_about_desc">
+              👋 Hi, I'm a web developer with a strong background in
+              international management. Fluent in French, English, and Spanish,
+              I focus on crafting responsive, intuitive web designs and
+              enhancing user experiences.
+            </p>
+            <img src="images/about-me.jpg" alt="about-me" />
+          </div>
         </div>
         <div class="row s-footer__bottom">
-            <div class="column xl-6 lg-12">
-                <ul class="s-footer__social social-list ">
-                    <li><a href="#0"><i class="fab fa-facebook" aria-hidden="true"></i><span class="u-screen-reader-text">Facebook</span></a></li>
-                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span class="u-screen-reader-text">Twitter</span></a></li>
-                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span class="u-screen-reader-text">Instagram</span></a></li>
-                    <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span class="u-screen-reader-text">Dribbble</span></a></li>
-                </ul>
-            </div>
-            <div class="column xl-6 lg-12 ">
-                <p class="ss-copyright">
-                    <span>© Copyright 2024</span>
-                </p>
-            </div>
-            <div class="ss-go-top ">
-                <a class="smoothscroll" title="Back to Top" href="#top">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 11 12 6 7 11"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
-                </a>
-            </div>
+          <div class="column xl-6 lg-12">
+            <ul class="s-footer__social social-list">
+              <li>
+                <a href="#0"
+                  ><i class="fab fa-facebook" aria-hidden="true"></i
+                  ><span class="u-screen-reader-text">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#0"
+                  ><i class="fab fa-twitter" aria-hidden="true"></i
+                  ><span class="u-screen-reader-text">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#0"
+                  ><i class="fab fa-instagram" aria-hidden="true"></i
+                  ><span class="u-screen-reader-text">Instagram</span></a
+                >
+              </li>
+              <li>
+                <a href="#0"
+                  ><i class="fab fa-dribbble" aria-hidden="true"></i
+                  ><span class="u-screen-reader-text">Dribbble</span></a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="column xl-6 lg-12">
+            <p class="ss-copyright" data-key="footer_copyright">
+              <span>© Copyright 2024</span>
+            </p>
+          </div>
+          <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="36"
+                height="36"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="17 11 12 6 7 11"></polyline>
+                <line x1="12" y1="18" x2="12" y2="6"></line>
+              </svg>
+            </a>
+          </div>
         </div>
         <script src="js/main.js"></script>
-    </footer>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
