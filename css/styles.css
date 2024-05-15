@@ -2617,7 +2617,10 @@ img {
   color: var(--color-3-dark) !important;
 }
 
-/* Correction pour les sections spécifiques */
+.light-theme body {
+  --sb-thumb-color: #3498db;
+}
+
 .light-theme .s-intro,
 .light-theme .s-about,
 .light-theme .s-expertise,
@@ -2745,16 +2748,16 @@ ol {
   list-style-type: none;
 }
 
+/* Contact section icons  */
 .icon {
-  vertical-align: middle; /* Essentiel pour l'alignement vertical */
-  height: 1.5rem; /* Hauteur ajustée pour correspondre à la taille du texte */
-  width: auto; /* Maintient le ratio d'aspect */
-  padding-right: 10px; /* Espace entre l'icône et le texte */
+  vertical-align: middle;
+  height: 1.5rem;
+  width: auto;
+  padding-right: 10px;
 }
 
-/* Ajustement spécifique pour les icônes SVG qui pourraient ne pas bien s'aligner */
 img.icon {
-  vertical-align: middle; /* Alignement vertical au milieu */
-  display: inline-block; /* Assure que l'élément est traité en ligne */
-  margin-bottom: 0em; /* Ajustez cette valeur si l'icône est légèrement décalée vers le haut */
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 0em;
 }
