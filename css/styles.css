@@ -2734,3 +2734,27 @@ img {
     margin: 20px 0;
   }
 }
+
+.s-contact {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.s-contact ul,
+ol {
+  list-style-type: none;
+}
+
+.icon {
+  vertical-align: middle; /* Essentiel pour l'alignement vertical */
+  height: 1.5rem; /* Hauteur ajustée pour correspondre à la taille du texte */
+  width: auto; /* Maintient le ratio d'aspect */
+  padding-right: 10px; /* Espace entre l'icône et le texte */
+}
+
+/* Ajustement spécifique pour les icônes SVG qui pourraient ne pas bien s'aligner */
+img.icon {
+  vertical-align: middle; /* Alignement vertical au milieu */
+  display: inline-block; /* Assure que l'élément est traité en ligne */
+  margin-bottom: 0em; /* Ajustez cette valeur si l'icône est légèrement décalée vers le haut */
+}
