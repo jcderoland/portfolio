@@ -1726,7 +1726,7 @@ img {
 
 .s-header__menu-toggle span {
   display: block;
-  background-color: var(--color-3);
+  background-color: var(--color-link);
   width: var(--toggle-line-width);
   height: var(--toggle-line-height);
   margin-top: -1px;
@@ -2655,6 +2655,10 @@ img {
   color: var(--color-text-dark) !important;
 }
 
+.light-theme .s-header__menu-toggle span {
+  background-color: black;
+}
+
 .light-theme .s-intro__scroll-down .scroll-icon {
   border-color: var(--color-1) !important;
   stroke: var(--color-1) !important;
@@ -2760,4 +2764,17 @@ img.icon {
   vertical-align: middle;
   display: inline-block;
   margin-bottom: 0em;
+}
+
+/* Top bar fixed */
+.s-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* S'assurer qu'elle reste au-dessus des autres contenus */
+  background-color: #fff; /* ou toute autre couleur de fond selon le design */
+}
+body {
+  padding-top: 80px; /* La hauteur de votre barre de navigation */
 }
