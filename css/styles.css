@@ -2785,3 +2785,39 @@ body {
   top: -85px;
   padding-top: 85px;
 }
+
+.s-header__menu-links {
+  display: flex;
+  align-items: center; /* Assure un alignement vertical des éléments */
+  justify-content: space-between; /* Espace les éléments de manière uniforme */
+  list-style: none; /* Supprime les puces de liste */
+  padding: 0;
+  margin: 0;
+}
+
+.s-header__menu-links li {
+  margin: 0 10px; /* Ajuste l'espacement horizontal entre les éléments */
+}
+
+.s-header__menu-links li img {
+  width: 45px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.s-header__menu-links a {
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--color-2-lightest);
+  text-decoration: none;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.s-header__menu-links a:hover {
+  color: black;
+}
