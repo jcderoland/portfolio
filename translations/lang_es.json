@@ -5,6 +5,10 @@
     "nav_about": "Sobre mí",
     "nav_expertise": "Experiencia",
     "nav_projects": "Proyectos",
+    "nav_cv": {
+      "text": "Descargar mi CV",
+      "url": "https://drive.google.com/file/d/1i7AHDhujp9zVbMjFSU5uNKUnDIy_gnbt/view?usp=sharing"
+    },
     "work_together": "Trabajemos juntos",
     "intro_hello": "Hola, soy Jean-Christophe",
     "intro_title": "Desarrollador Web",
@@ -19,7 +23,7 @@
     "expertise_title": "Áreas clave de Especialización",
     "expertise_desc": "Con una sólida experiencia en desarrollo web y gestión internacional, creo soluciones digitales centradas en el usuario.",
     "web_dev": "Desarrollo Web",
-    "web_dev_desc": "Experto en HTML, CSS, JavaScript, React y Node.js, creo sitios web y aplicaciones de alto rendimiento.",
+    "web_dev_desc": "Mediante HTML, CSS, JavaScript, React y Node.js, creo sitios web y aplicaciones de alto rendimiento.",
     "multilingual_capabilities": "Comunicación Multilingüe",
     "multilingual_capabilities_desc": "Fluido en francés, inglés y español, sobresalgo en entornos de proyectos globales, mejorando la colaboración en equipo.",
     "seo_optimization": "Optimización SEO",

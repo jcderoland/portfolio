@@ -93,7 +93,7 @@
    */
   --color-link: var(--color-1);
   --color-link-hover: var(--color-2-lighter);
-  --color-link-active: var(--color-2-lighter);
+  --color-link-active: black;
 
   /* buttons
    */
@@ -990,7 +990,7 @@ a {
 a:focus,
 a:hover,
 a:active {
-  color: var(--color-link-hover);
+  color: black;
 }
 
 a:hover,
@@ -1437,6 +1437,7 @@ img {
 .social-list {
   display: flex;
   align-items: center;
+  justify-content: center;
   list-style: none;
   margin: 0;
 }
@@ -2788,15 +2789,15 @@ body {
 
 .s-header__menu-links {
   display: flex;
-  align-items: center; /* Assure un alignement vertical des éléments */
-  justify-content: space-between; /* Espace les éléments de manière uniforme */
-  list-style: none; /* Supprime les puces de liste */
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .s-header__menu-links li {
-  margin: 0 10px; /* Ajuste l'espacement horizontal entre les éléments */
+  margin: 0 10px;
 }
 
 .s-header__menu-links li img {
@@ -2819,6 +2820,6 @@ body {
   transition: color 0.3s ease;
 }
 
-.s-header__menu-links a:hover {
-  color: black;
+.s-header__contact-btn {
+  background-color: red;
 }
