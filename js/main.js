@@ -66,7 +66,12 @@ function loadLanguage(lang) {
     .then((data) => {
       document.querySelectorAll("[data-key]").forEach((el) => {
         const key = el.getAttribute("data-key");
-        el.textContent = data[key];
+        if (typeof data[key] === "object") {
+          el.textContent = data[key].text;
+          el.setAttribute("href", data[key].url);
+        } else {
+          el.textContent = data[key];
+        }
       });
     });
 }

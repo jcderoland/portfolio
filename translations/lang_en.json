@@ -5,6 +5,10 @@
   "nav_about": "About me",
   "nav_expertise": "Expertise",
   "nav_projects": "Projects",
+  "nav_cv": {
+    "text": "Download CV",
+    "url": "https://drive.google.com/file/d/1WKtf-5NeyNK8YSTFfkBCEm5h3IRGZSvV/view"
+  },
   "work_together": "Let's Work Together",
   "intro_hello": "Hello, I'm Jean-Christophe",
   "intro_title": "Web Developer",

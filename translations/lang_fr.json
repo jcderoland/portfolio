@@ -5,6 +5,10 @@
     "nav_about": "À propos de moi",
     "nav_expertise": "Expertise",
     "nav_projects": "Projets",
+    "nav_cv": {
+      "text": "Télécharger mon CV",
+      "url": "https://drive.google.com/file/d/1_AxWzGe5JkwcKteNpSo2jJ6VyKQHtFSA/view?usp=sharing"
+    },
     "work_together": "Travaillons ensemble",
     "intro_hello": "Bonjour, je suis Jean-Christophe",
     "intro_title": "Développeur Web",
