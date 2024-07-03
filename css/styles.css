@@ -346,6 +346,7 @@ body::-webkit-scrollbar-thumb {
 .badge {
   width: 17%;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 
 .about-me {
@@ -569,13 +570,13 @@ img:hover {
 /* is clicked 
  */
 .s-header__menu-toggle.is-clicked span {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: var(--color-link);
   transition: all 0.1s;
 }
 
 .s-header__menu-toggle.is-clicked span::before,
 .s-header__menu-toggle.is-clicked span::after {
-  background-color: var(--color-3);
+  background-color: var(--color-link);
 }
 
 .s-header__menu-toggle.is-clicked span::before {
@@ -691,6 +692,44 @@ img:hover {
     transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
     transition-delay: 0.3s;
   }
+
+  .s-header__nav {
+    width: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: block;
+    background-color: var(--color-2-dark);
+    overflow: hidden;
+    transition: transform 0.4s ease;
+  }
+
+  .s-header__menu-links,
+  .s-header__contact {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  .menu-is-open .s-header__nav {
+    transform: scaleY(1);
+  }
+
+  /* Ensure flags and other elements fit well */
+  .flag,
+  .badge {
+    width: 25%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+
+  .s-header__logo {
+    width: 80px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -705,6 +744,24 @@ img:hover {
 
   .s-header__menu-toggle {
     right: calc(var(--gutter) * 2 + 0.4rem);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flag,
+  .badge {
+    width: 40%;
+    padding: 0 2px;
+    margin-bottom: 10px;
+  }
+
+  .s-header__nav {
+    padding: 10px;
+  }
+
+  .s-header__menu-links a {
+    padding: 8px 0;
+    font-size: 1.4rem;
   }
 }
 
@@ -2433,6 +2490,33 @@ img {
   .s-footer__about img {
     margin-top: 20px;
   }
+
+  .project-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .flag {
+    margin: 50px 0;
+    margin-bottom: 10px;
+  }
+
+  .flag,
+  .badge {
+    width: 30%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+  }
+
+  .s-header__menu-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s-header__menu-links a {
+    padding: 10px 0;
+  }
 }
 
 /* ------------------------------------------------------------------- 
@@ -2806,6 +2890,7 @@ body {
   height: auto;
   padding: 0;
   margin: 0;
+  margin-bottom: 10px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -2818,8 +2903,5 @@ body {
   text-decoration: none;
   padding: 0 7px;
   transition: color 0.3s ease;
-}
-
-.s-header__contact-btn {
-  background-color: red;
+  line-height: 2rem;
 }
