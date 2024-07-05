@@ -31,16 +31,31 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector(".s-header__menu-toggle");
   const siteBody = document.querySelector("body");
   const mainNav = document.querySelector(".s-header__nav");
+  const menuLinks = document.querySelectorAll(".s-header__nav a");
+
+  function toggleMenu() {
+    toggleButton.classList.toggle("is-clicked");
+    siteBody.classList.toggle("menu-is-open");
+    mainNav.classList.toggle("is-visible");
+  }
 
   if (toggleButton && mainNav) {
     toggleButton.addEventListener("click", function (e) {
       e.preventDefault();
-      this.classList.toggle("is-clicked");
-      siteBody.classList.toggle("menu-is-open");
-      mainNav.classList.toggle("is-visible");
+      toggleMenu();
+    });
+
+    menuLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        // Fermez le menu après avoir cliqué sur un lien
+        if (siteBody.classList.contains("menu-is-open")) {
+          toggleMenu();
+        }
+      });
     });
   }
 });
+
 // end toggle button mobile menu
 
 // Light blue theme
